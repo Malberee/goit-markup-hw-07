@@ -938,6 +938,7 @@ img {
   position: fixed;
   bottom: 10px;
   left: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .switch-theme-slider {
@@ -947,6 +948,7 @@ img {
 
 .custom-switch-theme {
   display: block;
+  cursor: pointer;
   width: 44px;
   height: 44px;
   border-radius: 22px;
