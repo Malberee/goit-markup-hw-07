@@ -18,14 +18,15 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
+		<!-- <link rel="stylesheet" href="./css/darkVars.css"> -->
 		<title>WebStudio</title>
 	</head>
-	<body>
+	<body class="">
 		<main>
 			<header class="header">
 				<div class="container header__container">
 					<nav class="header__navigation">
-						<a href="./index.html" class="logo link header__item"
+						<a href="./index.html" class="logo link"
 							>Web<span class="logo__item">Studio</span></a
 						>
 						<ul class="header__list list">
@@ -181,7 +182,7 @@
 								src="./images/img4.jpg"
 								alt="Усміхнений хлопець в окулярах"
 								width="270"
-								class="team-avatar"
+								class="team__avatar"
 							/>
 							<div class="team__content">
 								<h3 class="team__member">Ігор Дем'яненко</h3>
@@ -223,7 +224,7 @@
 								src="./images/img5.jpg"
 								alt="Усміхнена дівчина в окулярах"
 								width="270"
-								class="team-avatar"
+								class="team__avatar"
 							/>
 							<div class="team__content">
 								<h3 class="team__member">Ольга Рєпіна</h3>
@@ -265,7 +266,7 @@
 								src="./images/img6.jpg"
 								alt="Усміхнений хлопець без окулярів"
 								width="270"
-								class="team-avatar"
+								class="team__avatar"
 							/>
 							<div class="team__content">
 								<h3 class="team__member">Микола Тарасов</h3>
@@ -307,7 +308,7 @@
 								src="./images/img7.jpg"
 								alt="Знов усміхнений хлопець в окулярах"
 								width="270"
-								class="team-avatar"
+								class="team__avatar"
 							/>
 							<div class="team__content">
 								<h3 class="team__member">Михайло Єрмаков</h3>
@@ -396,35 +397,36 @@
 					</ul>
 				</div>
 			</section>
+		</main>
 			<footer class="footer">
 				<div class="container footer__container">
 					<div class="address__content">
-						<a href="./index.html" class="logo link"
-							>Web<span class="logo__item--inverse">Studio</span></a
+						<a href="./index.html" class="logo logo--inverse link"
+						>Web<span class="logo__item--inverse">Studio</span></a
 						>
 						<address class="address">
 							<ul class="footer__list list">
 								<li class="footer__item">
 									<a
-										href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-										target="_blank"
-										rel="noopener noreferrer nofollow"
-										class="footer__address link"
-										>м. Київ, пр-т Лесі Українки, 26</a
+									href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+									class="footer__address link"
+									>м. Київ, пр-т Лесі Українки, 26</a
 									>
 								</li>
 								<li class="footer__item">
 									<a
-										href="mailto:info@devstudio.com"
-										class="contact-mail contact-mail--footer link"
-										>info@devstudio.com</a
+									href="mailto:info@devstudio.com"
+									class="contact-mail contact-mail--footer link"
+									>info@devstudio.com</a
 									>
 								</li>
 								<li class="footer__item">
 									<a
-										href="tel:+380961111111"
-										class="contact-tel contact-tel--footer link"
-										>+38 096 111 11 11</a
+									href="tel:+380961111111"
+									class="contact-tel contact-tel--footer link"
+									>+38 096 111 11 11</a
 									>
 								</li>
 							</ul>
@@ -467,10 +469,10 @@
 						<h3 class="forms__title">Підпишіться на розсилку</h3>
 						<form action="#" class="footer__form">
 							<input
-								name="mail"
-								type="email"
-								placeholder="E-mail"
-								class="form__email-input"
+							name="mail"
+							type="email"
+							placeholder="E-mail"
+							class="form__email-input"
 							/>
 							<button type="button" class="form__subscribe-btn">
 								Підписатися
@@ -550,7 +552,11 @@
 					</form>
 				</div>
 			</div>
-		</main>
+			<label class="switch-theme">
+				<input type="checkbox" class="switch-theme-slider toggle-theme" />
+				<span class="custom-switch-theme"></span>
+			</label>
 		<script src="./scripts/modal.js"></script>
+		<script src="./scripts/theme.js"></script>
 	</body>
 </html>
