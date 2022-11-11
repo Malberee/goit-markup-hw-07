@@ -12,7 +12,7 @@
   --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
   --header-line-color: #ececec;
   --logo-item-color: black;
-  --logo-item-color-inverse: white;
+  --logo-item-inverse-color: white;
   --advances-icon-color: black;
   --portfolio-card-border-color: #eeeeee;
   --modal-forms-border-color: rgba(33, 33, 33, 0.2);
@@ -33,7 +33,7 @@
   --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
   --header-line-color: #161616;
   --logo-item-color: white;
-  --logo-item-color-inverse: white;
+  --logo-item-inverse-color: white;
   --advances-icon-color: #757575;
   --portfolio-card-border-color: #181818;
   --modal-forms-border-color: rgba(255, 255, 255, 0.2);
@@ -77,6 +77,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--secondary-text-color);
   background-color: var(--background-body-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 img {
@@ -124,9 +125,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   padding: 25px 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo .logo__item {
   color: var(--logo-item-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo--inverse {
@@ -144,6 +147,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 50px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-mail,
@@ -249,6 +253,7 @@ img {
 
 .header {
   border-bottom: 1px solid var(--header-line-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__container {
@@ -283,7 +288,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--wh);
+  color: var(--secondary-text-color);
   padding: 32px 0px;
 }
 
@@ -379,6 +384,7 @@ img {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advances__paragraph {
@@ -393,6 +399,7 @@ img {
   padding: 25px 102px;
   margin-bottom: 30px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .specification {
@@ -433,6 +440,7 @@ img {
 
 .team {
   background: var(--background-team-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__list {
@@ -444,6 +452,7 @@ img {
   background: var(--background-body-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__content {
@@ -458,6 +467,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__text {
@@ -547,7 +557,7 @@ img {
   margin-top: 30px;
   text-decoration: none;
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -583,6 +593,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   margin-bottom: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__text {
@@ -595,6 +606,7 @@ img {
 
 .card__content {
   padding: 24px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-left: 1px solid var(--portfolio-card-border-color);
   border-right: 1px solid var(--portfolio-card-border-color);
   border-bottom: 1px solid var(--portfolio-card-border-color);
@@ -603,6 +615,7 @@ img {
 .footer {
   background-color: var(--background-hero-color);
   padding: 60px 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__container {
