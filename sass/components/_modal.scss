@@ -36,7 +36,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -78,6 +78,8 @@
 
     color: var(--secondary-text-color);
     margin-bottom: 12px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__forms {
@@ -107,6 +109,8 @@
     line-height: 14px;
     letter-spacing: 0.01em;
     color: var(--gray-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__form {
     border: 1px solid var(--modal-forms-border-color); 
@@ -147,8 +151,7 @@
     left: 12px;
     fill: var(--secondary-text-color);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .modal__comment {
@@ -199,6 +202,8 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--gray-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-checkbox {
@@ -210,7 +215,7 @@
     background-color: transparent;
     margin-right: 7px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .license-link {
